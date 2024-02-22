@@ -11,7 +11,7 @@ const pitcherList = (state = [], action) => {
     console.log('pitcherList reducer.', action);
 
     if (action.type === 'PITCHERLIST_ADD') {
-        console.log(`airline to add is: ${action.payload}`);
+        console.log(`pitcher to add is: ${action.payload}`);
         return [...state, action.payload];
     }
     return state;
@@ -21,7 +21,7 @@ const catcherList = (state = [], action) => {
     console.log('catcherList reducer.', action);
 
     if (action.type === 'CATCHERLIST_ADD') {
-        console.log(`airline to add is: ${action.payload}`);
+        console.log(`catcher to add is: ${action.payload}`);
         return [...state, action.payload];
     }
     return state;
